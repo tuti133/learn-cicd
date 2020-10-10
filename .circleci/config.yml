@@ -10,4 +10,7 @@ jobs:
         - checkout
         - run:
             name: Build
-            command: mvn clean install
+            command: mvn compile
+        - run:
+            name: Test
+            command: mvn test
