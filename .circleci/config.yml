@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: openjdk:8-alpine
+    branches:
+        only:
+            - master
+    steps:
+        - checkout
+        - run:
+            name: Build
+            command: mvn clean install
