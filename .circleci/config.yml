@@ -5,7 +5,7 @@ jobs:
       - image: openjdk:8-alpine
     branches:
         only:
-            - master
+            - main
     steps:
         - checkout
         - run:
